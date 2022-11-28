@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/*Galeria-Imagenes*/
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+* { 
+    margin: 0;
+    padding: 0;
+}
+.galeria{
+    width: 24%;
+    transition: width 2s;
+}
+.galeria:hover{
+    width: 30%;
+}
+* { 
+    margin: 0;
+    padding: 0;
+}
+.img-footer {
+    width: 15px;
+    height: 15px;
+} 
+* { 
+    margin: 0;
+    padding: 0;
+}
+/*Logo-Home*/
+.foto-inicio{
+    width: 7%;
+}
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+/*Texto Horizontal*/
+nav{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+/*Color de fondo*/
+body{
+    background-color: whitesmoke
+}
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Tipografia*/
+.tipografia{
+    font-family:'Lato', sans-serif;
+}
+* { 
+    margin: 0;
+    padding: 0;
+}
+.tipografia-modifier{
+    font-size: 15px;
+}
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+.iframe{
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    animation-duration: 2s;
+    animation-name: animate__fadeInLeft;
+    animation-iteration-count: initial;
+}
+@keyframes animate__fadeInLeft{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+*{ 
+    margin: 0;
+    padding: 0;
+}
+/*Vista mobile*/
+@media only screen and (min-width: 0px) and (max-width:767px) {
+
+.grid-contenedor-responsive{
+    display: grid; grid-template-areas: 
+    "nav header header"
+    "nav salones publicidad"
+    "nav ubicacion publicidad"
+    "nav footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 70px auto 1fr 100px;
+}
+}
+/*Vista Desktop*/
+@media only screen and (min-width: 768px){
+    .grid-contenedor-responsive{
+        display: grid;grid-template-areas: 
+        "navizq navizq header header navder navder"  
+        "contenido contenido contenido salones salones salone" 
+        "footer footer footer footer footer";
+        grid-template-columns: 16.6% 16.6% 16.6% v 16.6% 16.6%;
+        grid-template-rows: 100px auto 200px;
+    }
+    header{grid-area: header; text-align: center;}
+    div.navizq{grid-area: navizq; display: flex; justify-content: space-around;}
+    div.navder{grid-area: navder;}
+    section.contenido{grid-area: contenido;} 
+    section.salonesContenido{grid-area: salones;}
+    footer{grid-area: footer;display: flex; justify-content: space-around;}
+}
+
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "nav header header"
+    "nav salones publicidad"
+    "nav contenido publicidad"
+    "nav footer footer";
+    grid-template-rows: 100px 50px 50px 75px;
+    grid-template-columns: 20% auto 15%;
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    height: 100vh;
+    margin: 0;
+}
+
+.border{
+    border: 1px solid black;
+    background-color: lightcoral;
+}
+header{
+    grid-area: header; 
+}
+footer{
+    grid-area: footer;
+}
+section#salones{
+    grid-area: salones;
+}
+section#ubicacion{
+    grid-area: ubicacion;
+}
+nav{
+    grid-area: nav;
+}
+aside{
+    grid-area: publicidad;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.inicio-header{
+    background-image: linear-gradient(to left,red,white);
+}
+
+li:active{
+    color:aquamarine;
+}
