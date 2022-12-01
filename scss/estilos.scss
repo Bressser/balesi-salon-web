@@ -130,9 +130,8 @@ body {
 
 li {
   color: white;
-}
-li:hover {
-  color: aquamarine;
-}
 
-/*# sourceMappingURL=estilos.css.map */
+  &:hover {
+    color: aquamarine;
+  }
+}
