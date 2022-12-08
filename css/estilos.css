@@ -23,19 +23,10 @@
   width: 25%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
 
 .img-footer {
   width: 15px;
   height: 15px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
 }
 
 /*Logo-Home*/
@@ -54,10 +45,6 @@
     opacity: 1;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-}
 
 /*Texto Horizontal*/
 nav {
@@ -68,38 +55,14 @@ nav {
   align-items: center;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 /*Color de fondo*/
 body {
   background-color: whitesmoke;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/*Tipografia*/
-.tipografia {
-  font-family: "Lato", sans-serif;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
 
 .tipografia-modifier {
   font-size: 15px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
 }
 
 .iframe {
@@ -109,19 +72,9 @@ body {
   display: inline-block;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .border {
   border: 1px solid black;
   background-color: lightcoral;
-}
-
-* {
-  padding: 0;
-  margin: 0;
 }
 
 .inicio-header {
@@ -133,6 +86,37 @@ li {
 }
 li:hover {
   color: aquamarine;
+}
+
+/*Maps II*/
+/*Each*/
+.btn--twitter {
+  background-color: #55acee;
+}
+
+.btn--facebook {
+  background-color: #3a5695;
+}
+
+.btn--send-email {
+  background-color: #C25E30;
+}
+
+.btn--instagram {
+  background-color: rgba(247, 47, 124, 0.575);
+}
+
+/*Mixin*/
+.flex-container {
+  width: 100%;
+  height: 500px;
+  background-color: #C25E30;
+  color: red;
+}
+
+.foto-inicio {
+  height: 60px;
+  width: 80px;
 }
 
 /*# sourceMappingURL=estilos.css.map */

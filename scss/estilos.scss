@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import "colores";
+/*Variables*/
+$font: normal 'lato', sans-serif;
+
 /*Galeria-Imagenes*/
 .flex-container {
   display: flex;
@@ -135,3 +139,44 @@ li {
     color: aquamarine;
   }
 }
+
+/*Maps II*/
+$colors: (
+  twitter: #55acee, 
+  facebook: #3a5695,
+  send-email: #C25E30,
+  instagram: rgba(247, 47, 124, 0.575)
+);
+
+/*Each*/
+@each $name-color, $bg-color in $colors {
+  .btn--#{$name-color}{
+    background-color: $bg-color;
+  }
+}
+
+/*Mixin*/
+@mixin newFondos(){
+  width: 100%;
+  height: 500px;
+  background-color: #C25E30;
+  color: red;
+}
+
+.flex-container{
+  @include newFondos()
+}
+
+@mixin sizes($width, $height){
+  height: $height;
+  width: $width;
+}
+
+.foto-inicio{
+  @include sizes(80px, 60px);
+}
+
+.tipografia{
+  font: $font;
+}
+
