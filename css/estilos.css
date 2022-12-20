@@ -81,11 +81,15 @@ body {
   background-image: linear-gradient(to left, red, white);
 }
 
+footer{
+  background-image: linear-gradient(to left, red, white);
+}
+
 li {
   color: white;
 }
 li:hover {
-  color: aquamarine;
+  color: black;
 }
 
 /*Maps II*/
@@ -119,4 +123,113 @@ li:hover {
   width: 80px;
 }
 
+
+.body-contact {
+  color: #fff;
+  font-family: "lato-bold", sans-serif;
+  padding: 0 1.5rem;
+}
+
+.contenido {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+
+.nombre-empresa {
+  margin-bottom: 1rem;
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.contenedor-contacto {
+  box-shadow: 0 0 20px 0 gray
+}
+
+.contenedor-contacto > * {
+  padding: 1rem;
+}
+
+.formulario-contacto {
+  background-color: slategray;
+}
+
+.formulario-contacto form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.formulario-contacto form .bloque {
+  grid-column: 1/3;
+}
+
+.formulario-contacto form p {
+  margin: 0;
+  padding: 1em;
+  color: white;
+}
+
+.formulario-contacto form button,
+.formulario-contacto form input,
+.formulario-contacto form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 1px solid red;
+  color: #fff;
+}
+
+.formulario-contacto form button {
+  background-color: red;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.info-contacto {
+  background-color: #000;
+}
+
+.info-contacto ul,
+.info-contacto p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.info-contacto ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info-contacto ul li {
+  padding: 0.3rem;
+}
+
+.contenedor-reserva {
+  box-shadow: 0 0 20px 0 gray
+}
+
+.contenido-reserva{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
+  text-align: center;
+  color: whitesmoke;  
+}
+
+.contenido-reserva2{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
+  text-align: center;
+  color: gray;
+}
 /*# sourceMappingURL=estilos.css.map */
