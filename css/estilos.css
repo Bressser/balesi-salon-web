@@ -70,6 +70,7 @@ body {
   margin: 5px;
   padding: 5px;
   display: inline-block;
+  align-items: center;
 }
 
 .border {
@@ -231,5 +232,22 @@ li:hover {
   background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
   text-align: center;
   color: gray;
+}
+
+.grid-footer{
+  display: grid;
+  grid-template-columns: 350px;
+  grid-template-rows: auto;
+  align-content: end;
+  justify-content: start;
+  
+}
+
+.grid-footer2{
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: auto;
+  align-content: end;
+  justify-content: center;
 }
 /*# sourceMappingURL=estilos.css.map */
