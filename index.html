@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./assets/logos/balesilogo2-.png">
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <meta name="keywords" content="SALON, EVENTOS, PILAR, ZONA NORTE, AFORO"> 
     <meta name="description" content="Salón de usos múltiples | Deportes | Cultura | Eventos | Contrataciones | Estacionamiento propio">
     <title> Balesi </title>
@@ -35,6 +36,7 @@
     </nav>
 
     <header>
+        <section class="reservar-botton">
         <div class="toast toast-demo fade show" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-body">
               No te olvides de reservar tu evento!
@@ -44,16 +46,72 @@
               </div>
             </div>
           </div>
-
-    <main class="iframe">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/2P1ncKiW3Ec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    </header>
+    
+    <main>
+        <body>
+            <main class="contenedor-reserva">
+            <div class="contenido-reserva">
+            <h4>¡Reservar tu fecha, es fácil y seguro!</h4>
+            <p>Podés elegir tu salón y conocer todo nuestro servicio para poder reservar y asegurar tu fecha. En 3 simples pasos vas a encontrar toda la información necesaria para comenzar a organizar tu fiesta.</p>
+            </div>
+        <section class="contenido-reserva2">
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnGroupRadio" id="btnRadio1" autocomplete="off" checked="">
+                <label class="btn btn-outline-primary" for="btnRadio1">Casamiento</label>
+              
+                <input type="radio" class="btn-check" name="btnGroupRadio" id="btnRadio2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnRadio2">Mis 15</label>
+              
+                <input type="radio" class="btn-check" name="btnGroupRadio" id="btnRadio3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnRadio3">Informal</label>
+              </div>
+              <div class="div_inp">
+                <div>Cant. Invitados</div>
+                <div><input type="number" min="100" name="cant" id="cant-invitados" placeholder=" 0" class="form-input"></div>
+            </div>
+            <input type="submit" value="Enviar Formulario"/>  
+        </section>
+        </main>
+        </body>
     </main>
 
+    <section>
+    <h1 class="nombre-empresa">Nuestro salon!</h1>
+    <div class="grid-imagenes">
+        <div>
+            <img class="fiesta-img" src="./assets/fotos/patio-balesi.jpg" alt="foto-patio">
+            <p>Ustedes, junto a todos sus invitados, disfrutarán de amplios parques y arboledas que rodean al salón para realizar su fiesta soñada. </p>
+            <button>
+                <span class="button_top"> Reservar
+                </span>
+              </button>
+        </div>
 
+        <div>
+            <img class="fiesta-img" src="./assets/fotos/centro-de-mesa-balesi.jpg" alt="foto-centro-mesa">
+            <p>Se trata de un salón equipado con la última tecnología en técnica y sonido, dos elementos que harán que su celebración sea un evento único.</p>
+            <button>
+                <span class="button_top"> Reservar
+                </span>
+              </button>
+        </div>
 
-    </header>
+        <div>
+            <img class="fiesta-img" src="./assets/fotos/novios.jpg" alt="foto-novios">
+            <p>Contamos con diferentes sectores acondicionados y diseñado para lograr el confort y comodidad de sus invitados</p>
+            <button>
+                <span class="button_top"> Reservar
+                </span>
+              </button>
+        </div>
+
+    </div>
+    </section>
+
     <!--Footer-->
-    <footer class="grid-footer">
+    <footer class="grid-footer3">
         <ul class="tipografia">
             <li>
             <a href="./pages/galeria-de-fotos.html">Nuestro Salon</a>
@@ -64,11 +122,11 @@
             <li>
             <a href="./pages/contacto.html">Contacto</a>
             </li>
-            <li>
+            <p>
             Tel:11 2706-7779 / 11 2706-7779
-            </li>
-            
-            <img class="img-footer" src="./assets/logos/instagram.png" alt="red-social-balesi">
+            </p>
+        
+            <img href="https://www.instagram.com/sum.balesi/?hl=es-la" target="_blank" class="img-footer" src="./assets/logos/instagram.png" alt="red-social-balesi">
         </ul> 
     </footer>
     <footer class="grid-footer2">
@@ -83,5 +141,6 @@
         </form>
         </footer>
 
+        
 </body>
 </html>

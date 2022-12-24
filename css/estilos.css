@@ -66,12 +66,12 @@ body {
 }
 
 .iframe {
-  border: 1px solid black;
   margin: 5px;
   padding: 5px;
-  display: inline-block;
-  align-items: center;
+  display: flex;
+  justify-content: center;
 }
+
 
 .border {
   border: 1px solid black;
@@ -115,7 +115,7 @@ li:hover {
 .flex-container {
   width: 100%;
   height: 500px;
-  background-color: #C25E30;
+  background-color: gray;
   color: red;
 }
 
@@ -143,6 +143,9 @@ li:hover {
   color: black;
   text-align: center;
   font-size: 3rem;
+  animation-name: animate__heartBeat;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
 }
 
 .contenedor-contacto {
@@ -216,12 +219,12 @@ li:hover {
 
 .contenido-reserva{
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  margin-top: 100px;
   padding: 2rem;
   background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
   text-align: center;
-  color: whitesmoke;  
+  color: whitesmoke; 
 }
 
 .contenido-reserva2{
@@ -240,7 +243,7 @@ li:hover {
   grid-template-rows: auto;
   align-content: end;
   justify-content: start;
-  
+  margin-top: 50px;
 }
 
 .grid-footer2{
@@ -249,5 +252,78 @@ li:hover {
   grid-template-rows: auto;
   align-content: end;
   justify-content: center;
+  margin-left: 5px;
 }
+
+.grid-footer3{
+  display: grid;
+  grid-template-columns: 350px;
+  grid-template-rows: auto;
+  align-content: end;
+  justify-content: start;
+  margin-top: 200px;
+}
+
+.conocenos-p{
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  background-image: linear-gradient( 110.3deg,  rgba(73,93,109,1) 4.3%, rgba(49,55,82,1) 96.7% );
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  text-align: center;
+}
+
+.reservar-botton{
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+.grid-imagenes {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px;
+  gap: 10px;
+}
+
+button {
+  --button_radius: 0.75em;
+  --button_color: #e8e8e8;
+  --button_outline_color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+  margin-top: 10px;
+}
+
+.button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+  transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+  transform: translateY(0);
+}
+
+.fiesta-img {
+  width: 350px;
+}
+
 /*# sourceMappingURL=estilos.css.map */
